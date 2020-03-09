@@ -126,7 +126,7 @@ namespace GameplayIngredients.Editor
             EditorSceneManager.sceneOpened -= UpdateDiscoverObjectsOnLoad;
             EditorSceneSetup.onSetupLoaded -= UpdateDiscoverObjectsOnLoadSetup;
 
-            if (s_Windows.Contains(this))
+            if (s_Windows != null && s_Windows.Contains(this))
                 s_Windows.Remove(this);
         }
 
@@ -580,6 +580,8 @@ namespace GameplayIngredients.Editor
 
             public static GUIStyle tabContainer;
 
+            public static GUIStyle image;
+
             static Styles()
             {
                 header = new GUIStyle(EditorStyles.wordWrappedLabel);
@@ -623,6 +625,9 @@ namespace GameplayIngredients.Editor
 
                 tabContainer = new GUIStyle(EditorStyles.miniButton);
                 tabContainer.padding = new RectOffset(4, 4, 0, 0);
+
+                image = new GUIStyle(GUIStyle.none);
+                image.stretchWidth = true ;
 
             }
         }

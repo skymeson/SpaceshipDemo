@@ -44,7 +44,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -101,7 +101,8 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000022, guid: a20d742a6e2cc974ba08423e9c5b39d2,
     type: 2}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 044f89305256327459407e38fbe599b6,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -121,6 +122,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -551,7 +554,7 @@ PrefabInstance:
     - target: {fileID: 3051613761021890901, guid: 19fae04e742ff9e4cacf64bc612e7761,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3051613761021890901, guid: 19fae04e742ff9e4cacf64bc612e7761,
         type: 3}
@@ -683,6 +686,7 @@ Material:
     - _EmissiveColor: {r: 0.7699847, g: 1.2107908, b: 1.2030345, a: 1.8568076}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _UnlitColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &85789997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,6 +1221,7 @@ MonoBehaviour:
   m_Script: {fileID: 822798401}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Entries: []
 --- !u!4 &113172413
 Transform:
   m_ObjectHideFlags: 19
@@ -2156,7 +2161,7 @@ PrefabInstance:
     - target: {fileID: 3051613761021890901, guid: 19fae04e742ff9e4cacf64bc612e7761,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3051613761021890901, guid: 19fae04e742ff9e4cacf64bc612e7761,
         type: 3}
@@ -2505,7 +2510,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 523111597fa469241925504871f95f72, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: f5adc4c49a338b94baaed5f78c36b78a, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -2887,6 +2892,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2911,6 +2917,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &344722922
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,6 +3014,7 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3031,6 +3039,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &356479595
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3877,7 +3886,7 @@ PrefabInstance:
     - target: {fileID: 4232308801641103613, guid: c82f89b955395a741b8e42b0dfe1e17b,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 0
+      value: -4.043182e-28
       objectReference: {fileID: 0}
     - target: {fileID: 4232308801641103613, guid: c82f89b955395a741b8e42b0dfe1e17b,
         type: 3}
@@ -4069,12 +4078,12 @@ PrefabInstance:
     - target: {fileID: 4232308801641103613, guid: c82f89b955395a741b8e42b0dfe1e17b,
         type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 2.3571e-41
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4232308801641103613, guid: c82f89b955395a741b8e42b0dfe1e17b,
         type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 1.01e-43
+      value: 427
       objectReference: {fileID: 0}
     - target: {fileID: 4232308801641103613, guid: c82f89b955395a741b8e42b0dfe1e17b,
         type: 3}
@@ -4084,7 +4093,7 @@ PrefabInstance:
     - target: {fileID: 4232308801641103613, guid: c82f89b955395a741b8e42b0dfe1e17b,
         type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 7.29e-43
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6011944730506922235, guid: c82f89b955395a741b8e42b0dfe1e17b,
         type: 3}
@@ -4505,6 +4514,7 @@ Material:
     - _EmissiveColor: {r: 0.4356743, g: 0.4527414, b: 0.5376416, a: 0.5376416}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _UnlitColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &628183890
 GameObject:
   m_ObjectHideFlags: 0
@@ -6340,7 +6350,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 1850326967}
-  m_BakedTexture: {fileID: 8900000, guid: 738cff7ff39cc734abf3a2182a4c46e4, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: abbf0d400ba80d54cb8351b24afc12fa, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -6787,7 +6797,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: f5adc4c49a338b94baaed5f78c36b78a, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 047dc5315278868469f326ce0d710eca, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -6981,6 +6991,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7005,6 +7016,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &874885808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7665,7 +7677,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 88ab9ff0a564ca2449b2ee8fe3f087fb, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 689bc973878ab50409ce2ac2a940605a, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -8186,7 +8198,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 047dc5315278868469f326ce0d710eca, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 738cff7ff39cc734abf3a2182a4c46e4, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -8940,6 +8952,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8964,6 +8977,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1093407584
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9262,7 +9276,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 689bc973878ab50409ce2ac2a940605a, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 523111597fa469241925504871f95f72, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -9612,6 +9626,7 @@ Material:
     - _EmissiveColor: {r: 0.46855634, g: 0.105392724, b: 0.0027188973, a: 0.46855634}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _UnlitColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1209125063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10529,6 +10544,34 @@ MonoBehaviour:
   m_Script: {fileID: 1441189480}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Entries:
+  - id: 0
+    category: 0
+    gameObject: {fileID: 979768838}
+  - id: 1
+    category: 0
+    gameObject: {fileID: 325457620}
+  - id: 2
+    category: 0
+    gameObject: {fileID: 1112875532}
+  - id: 3
+    category: 0
+    gameObject: {fileID: 1470610912}
+  - id: 4
+    category: 0
+    gameObject: {fileID: 1672757542}
+  - id: 5
+    category: 0
+    gameObject: {fileID: 902961692}
+  - id: 6
+    category: 0
+    gameObject: {fileID: 839010677}
+  - id: 7
+    category: 0
+    gameObject: {fileID: 848412174}
+  - id: 8
+    category: 0
+    gameObject: {fileID: 85789997}
 --- !u!4 &1299963904
 Transform:
   m_ObjectHideFlags: 19
@@ -11588,6 +11631,7 @@ Material:
     - _EmissiveColor: {r: 1.111645, g: 0.589929, b: 0.028416162, a: 1.3706021}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _UnlitColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!115 &1441189480
 MonoScript:
   m_ObjectHideFlags: 0
@@ -12107,7 +12151,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 4f3b2ae1b3a465c4cae04a16244e6e0b, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 88ab9ff0a564ca2449b2ee8fe3f087fb, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -12562,6 +12606,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12586,6 +12631,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1001 &1563733001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12873,7 +12919,7 @@ PrefabInstance:
     - target: {fileID: 3051613761021890901, guid: 19fae04e742ff9e4cacf64bc612e7761,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3051613761021890901, guid: 19fae04e742ff9e4cacf64bc612e7761,
         type: 3}
@@ -15522,6 +15568,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -15546,6 +15593,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1672757542
 GameObject:
   m_ObjectHideFlags: 0
@@ -15836,7 +15884,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: abbf0d400ba80d54cb8351b24afc12fa, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 4f3b2ae1b3a465c4cae04a16244e6e0b, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -18506,7 +18554,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 5155
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 4.388228e-39, z: 7.3e-43, w: 0.000000056187588}
+  m_BoundingSphereOverride: {x: 4.5905e-41, y: 0, z: 0, w: 14423.5}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -19212,12 +19260,12 @@ PrefabInstance:
     - target: {fileID: 4232308801641103613, guid: c82f89b955395a741b8e42b0dfe1e17b,
         type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 1.01e-43
+      value: -5.1626327e-19
       objectReference: {fileID: 0}
     - target: {fileID: 4232308801641103613, guid: c82f89b955395a741b8e42b0dfe1e17b,
         type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 0
+      value: 6.96e-43
       objectReference: {fileID: 0}
     - target: {fileID: 4232308801641103613, guid: c82f89b955395a741b8e42b0dfe1e17b,
         type: 3}
@@ -19828,7 +19876,7 @@ PrefabInstance:
     - target: {fileID: 3051613761021890901, guid: 19fae04e742ff9e4cacf64bc612e7761,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3051613761021890901, guid: 19fae04e742ff9e4cacf64bc612e7761,
         type: 3}
