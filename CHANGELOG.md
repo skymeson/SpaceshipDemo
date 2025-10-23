@@ -1,5 +1,110 @@
 # CHANGELOG
 
+## 2023 - 03 - 03 - 2022.2
+
+**Version Tag** : `2021.2.6f1`
+
+* Updated Unity to 2021.2.6f1
+* Updated HDRP/VFX to 14.0.6
+* **Fixes and Changes:**
+  * MainMenu / Spaceship Scene adjustments
+  * Adjusted MainMenu - Galaxy.vfx Position Mode of Galaxy Stars system
+  * Adjusted Cloud Diffuse Volume to be in range of the effects (resolved the issue of a pink tint)
+  * Embedded external packages
+  * Update VFXVolumeMixerEditor.cs (Obsolete API, adjusted according new changes)
+  * Change from Overlay to ToolbarOverlay class (in SceneViewToolbar.Overlays.cs) as Overlay class is marked as internal
+  * Update RigManager.cs
+  * Changed RT Depth buffer format to resolve errors on Metal
+  * Adjusted Alert Playable in order not to throw Null Reference Exception
+  * Rebaked lighting
+  * Added scenes to level lists
+  * Updated VFX shaders to use new integration
+  * Removed some of the deprecated console commands from external packages (Physics.AutoSimulation)
+  * Removed Cube .wire file which is empty hence warning(it did not have vertex/index data)
+  * Adjusted some ShaderGraph to resolve implicit truncation warnings
+
+* **Known Issues:**
+  * RefreshRate has deprecated API hence warnings when building player
+
+## 2021 - 11 - 24 - First 2021.2 Version
+
+**Version Tag** : `2021.2.0`
+
+* Updated Unity to 2021.2.1f1
+* Updated HDRP/VFX to 12.1.1
+* **Fixes and Changes:**
+  * Added Support for Upsampling methods as options
+    * NVidia DLSS (Windows Only)
+    * AMD FSR
+    * Temporal AA Upsampling
+    * Contrast-Adaptive Sharpen
+    * Catmull-Rom
+  * Added Lensflares through the walkthrough
+* **Known Issues:**
+  * Particle Depth Collisions not working properly when rendering at < 100%
+  * Jittering of the FPS Reticula Crosshair
+
+## 2021 - 11 - 17 - LTS 2020.3 Version
+
+**Version Tag** : `2020.3.0`
+
+* Updated Unity to 2020.3.19f1
+* Updated HDRP/VFX to 10.6.0
+
+* **Fixes and Changes:**
+  * Added Quality Settings : Low & Ultra
+  * Updated Content to optimize/enhance based on quality settings
+  * Updated Terminal Room to show outer space through a window
+  * Updated Benchmark Mode to Display FPS Counter, and a Benchmark Report at the end
+  * Benchmark also saves a HTML reports in Documents/SpaceshipDemo folder
+  * VFX / Lighting polishing.
+
+## 2021 - 02 - 17 - LTS 2020.2 Version
+
+**Version Tag** : `2020.2.0`
+
+* Updated Unity to 2020.2.4f1
+* Updated HDRP/VFX to 10.3.1
+
+* **Fixes and Changes:**
+  * Rebuilt Lighting
+  * Rebuilt VFX Graphs
+  * Fixed Many Errors and Warnings
+  * Fixed Animated Light Cookes (CustomRenderTexture)
+  * Block Player input while in pause/toggle console
+
+## 2021 - 02 - 08 - 2020.1 Update
+
+**Version Tag** : `2020.1.1`
+
+* Updated Unity to 2020.1.17f1
+* Updated HDRP/VFX to 8.3.1
+
+* **Fixes and Changes:**
+  * Rebuilt Lighting
+  * Rebuilt VFX Graphs
+  * Fixed Lights with broken Cookie textures
+
+## 2020 - 08 - 06 - 2020.1 Version
+
+**Version Tag** : `2020.1.0`
+
+* Updated Unity to 2020.1.0f1
+* **Fixes and Changes:**
+  * Rebuilt Lighting
+  * Rebuilt VFX Graphs
+
+## 2020 - 08 - 06 - LTS 2019.4 Version
+
+**Version Tag** : `2019.4.0`
+
+* Updated Unity to 2019.4.3f1
+* Updated Timeline Package to 1.4.1
+* Added Benchmark Mode (Flyby Camera)
+* **Fixes and Changes:**
+  * Rebuilt VFX Graphs
+  * Small Fixes for macOS
+
 ## 2020 - 06 - 08 - Package Upgrade
 
 **Version Tag** : `2019.3.3`
